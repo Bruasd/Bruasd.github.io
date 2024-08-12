@@ -67,6 +67,19 @@ ul {
     padding-left: 20px;
 }
 
+.reference {
+    margin-bottom: 20px;
+}
+
+.reference h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.reference p {
+    margin: 2px 0;
+}
+
 @media (max-width: 768px) {
     .container {
         width: 95%;
