@@ -80,6 +80,17 @@ ul {
     margin: 2px 0;
 }
 
+.reference a {
+    color: #0056b3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.reference a:hover {
+    color: #003d82;
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .container {
         width: 95%;
