@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #4aa3df;
+    border-bottom: 2px solid #4aa3df;
+    padding-bottom: 5px;
+}
+
+.education-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.edu-left {
+    width: 70%;
+}
+
+.edu-right {
+    width: 30%;
+    text-align: right;
+}
+
+.project h3 {
+    color: #333;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .education-item {
+        flex-direction: column;
+    }
+    .edu-left, .edu-right {
+        width: 100%;
+    }
+    .edu-right {
+        text-align: left;
+    }
+}
