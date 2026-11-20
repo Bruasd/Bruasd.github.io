@@ -15,10 +15,9 @@
         <div class="shell header-inner">
             <a class="wordmark" href="index.html" aria-current="page">Chengxiao Dong</a>
             <nav aria-label="Main navigation">
-                <a href="#about">About</a>
                 <a href="#research">Research</a>
                 <a href="#publications">Publications</a>
-                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
                 <a href="#contact">Contact</a>
                 <a class="nav-cv" href="cv/index.html">CV</a>
             </nav>
@@ -30,7 +29,7 @@
                 <div class="hero-copy">
                     <h1 id="home-title">Chengxiao Dong</h1>
                     <p class="position">PhD Researcher, <a href="https://www.unibo.it/sitoweb/chengxiao.dong2/en">University of Bologna</a></p>
-                    <p class="hero-intro">I study how robots can learn about the physical world through interaction and use that knowledge to manipulate objects whose shape and contact conditions change.</p>
+                    <p class="hero-intro">We will naturally know how the robots change the world, and I want to struggle in this progress.</p>
                     <ul class="hero-links">
                         <li><a href="mailto:chengxiao.dong2@unibo.it">Email</a></li>
                         <li><a href="https://github.com/Bruasd">GitHub</a></li>
@@ -38,31 +37,31 @@
                         <li><a class="button" href="cv/Chengxiao-Dong-CV.pdf" download>Download CV</a></li>
                     </ul>
                 </div>
-                <figure class="portrait">
-                    <div class="portrait-placeholder" aria-hidden="true"><span></span></div>
-                    <figcaption>Portrait placeholder</figcaption>
-                </figure>
+                <img class="portrait" src="photo.jpg" width="1500" height="2000" alt="Portrait of Chengxiao Dong" fetchpriority="high">
             </div>
         </section>
 
         <div class="shell">
-            <section class="section about" id="about" aria-labelledby="about-title">
-                <div>
-                    <h2 id="about-title">About</h2>
-                    <p>I am a PhD researcher at the University of Bologna, Italy. My research spans deformable linear object manipulation, robot policies that learn from past interactions, tactile sensing, active perception, and vision-language-action learning.</p>
-                    <h3>Research Interests</h3>
-                    <ul class="interest-list">
-                        <li>Embodied Artificial Intelligence</li>
-                        <li>Robot Manipulation</li>
-                        <li>Deformable Object Manipulation</li>
-                        <li>Vision-Language-Action Models</li>
-                        <li>Robot Learning and World Models</li>
-                        <li>Active Perception</li>
-                        <li>Physical Intelligence and Force-aware Learning</li>
-                    </ul>
-                </div>
-                <div class="education">
-                    <h3>Education</h3>
+            <div class="section research-overview" id="about">
+                <section id="research" aria-labelledby="research-title">
+                    <h2 id="research-title">Research</h2>
+                    <div class="research-grid">
+                        <article class="research-area">
+                            <h3>Deformable Object Manipulation</h3>
+                            <p>Cables and other deformable objects can take many shapes, and the same action can have different effects depending on how they are grasped. I study how robots can choose grasps and reshape these objects using visual observations and feedback from interaction.</p>
+                        </article>
+                        <article class="research-area">
+                            <h3>Physical Context World Models for Robotic Manipulation</h3>
+                            <p>I study how a robot can infer hidden properties, such as stiffness, from what happens when it touches or moves an object. I aim to learn representations that help a robot predict the consequences of its actions and choose what to do next.</p>
+                        </article>
+                        <article class="research-area">
+                            <h3>Force-aware Vision-Language-Action Models</h3>
+                            <p>I explore how force and tactile feedback can complement vision and language in robot policies. These signals can help a robot recognize contact and adjust its motion during manipulation.</p>
+                        </article>
+                    </div>
+                </section>
+                <section class="education" id="education" aria-labelledby="education-title">
+                    <h2 id="education-title">Education</h2>
                     <ol class="education-list">
                         <li>
                             <p class="degree">PhD</p>
@@ -82,26 +81,8 @@
                             <p class="education-date">2018–2022</p>
                         </li>
                     </ol>
-                </div>
-            </section>
-
-            <section class="section" id="research" aria-labelledby="research-title">
-                <h2 id="research-title">Research</h2>
-                <div class="research-grid">
-                    <article class="research-area">
-                        <h3>Deformable Object Manipulation</h3>
-                        <p>Cables and other deformable objects can take many shapes, and the same action can have different effects depending on how they are grasped. I study how robots can choose grasps and reshape these objects using visual observations and feedback from interaction.</p>
-                    </article>
-                    <article class="research-area">
-                        <h3>Physical Context World Models for Robotic Manipulation</h3>
-                        <p>I study how a robot can infer hidden properties, such as stiffness, from what happens when it touches or moves an object. I aim to learn representations that help a robot predict the consequences of its actions and choose what to do next.</p>
-                    </article>
-                    <article class="research-area">
-                        <h3>Force-aware Vision-Language-Action Models</h3>
-                        <p>I explore how force and tactile feedback can complement vision and language in robot policies. These signals can help a robot recognize contact and adjust its motion during manipulation.</p>
-                    </article>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <section class="section" id="publications" aria-labelledby="publications-title">
                 <div class="section-heading">
@@ -111,109 +92,100 @@
                     </div>
                     <a href="https://scholar.google.com/citations?user=mXlfyPsAAAAJ">Full list on Google Scholar</a>
                 </div>
-                    <div class="publication-year">
-                        <h3>2026</h3>
-                        <ul class="publication-list">
-                            <li class="publication">
-                                <p class="publication-type">Preprint</p>
-                                <h4><a href="https://arxiv.org/abs/2611.14274">From Prediction to Action: Learning Physical Context for Deformable Linear Object Manipulation</a></h4>
+                <ul class="publication-list">
+                    <li class="publication" id="physical-context">
+                        <a class="publication-link" href="https://arxiv.org/abs/2611.14274" aria-labelledby="physical-context-title">
+                            <span class="publication-thumb" aria-hidden="true">
+                                <img src="assets/papers/physical-context.webp" width="720" height="208" loading="lazy" alt="">
+                            </span>
+                            <div class="publication-info">
+                                <p class="publication-type">First author · Preprint</p>
+                                <h3 id="physical-context-title">From Prediction to Action: Learning Physical Context for Deformable Linear Object Manipulation</h3>
                                 <p class="authors"><strong>Chengxiao Dong</strong>, Alessio Caporali, Hongyu Lan, Gianluca Palli</p>
-                                <p class="publication-venue"><cite>arXiv:2611.14274</cite></p>
-                            </li>
-                            <li class="publication">
-                                <h4><a href="https://doi.org/10.1145/3772318.3791956">Motion-Touch: Kinematic-based Adaptive Switch for Enhancing Virtual-Hand Selection with Target Prediction in AR/VR</a></h4>
-                                <p class="authors">Yixuan Liu, Ruyang Yu, Haolong Li, Kunling Han, <strong>Chengxiao Dong</strong>, Tao Luo</p>
-                                <p class="publication-venue"><cite>Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems</cite></p>
-                            </li>
-                            <li class="publication">
-                                <h4><a href="https://doi.org/10.1109/TASE.2025.3554036">Multimodal Intention Recognition Combining Head Motion and Throat Vibration for Underwater Superlimbs</a></h4>
-                                <p class="authors">Rongzheng Zhang, Wanghongjie Qiu, Jianuo Qiu, Yuqin Guo, <strong>Chengxiao Dong</strong>, Tuo Zhang, Juan Yi, Chaoyang Song, H. Harry Asada, Fang Wan</p>
-                                <p class="publication-venue"><cite>IEEE Transactions on Automation Science and Engineering</cite> <span>· First published online in 2025</span></p>
-                            </li>
-                            <li class="publication">
-                                <p class="publication-type">Late-breaking abstract</p>
-                                <h4><a href="https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_3.html#tui2lb_17">Active Perception for Deformable Linear Objects Stiffness Estimation</a></h4>
-                                <p class="authors"><strong>Chengxiao Dong</strong>, Alessio Caporali, Hongyu Lan, Gianluca Palli</p>
-                                <p class="publication-venue"><cite>IEEE International Conference on Robotics and Automation (ICRA)</cite></p>
-                            </li>
-                            <li class="publication">
-                                <p class="publication-type">Workshop</p>
-                                <h4><a href="https://dex-manipulation.github.io/icra2026/">Towards Dexterous Agri-Food Manipulation: Topology-Dependent Interaction Patterns in a Reconfigurable Multifingered Gripper</a></h4>
-                                <p class="authors">Hongyu Lan, Alessio Caporali, <strong>Chengxiao Dong</strong>, Gianluca Palli, Claudio Melchiorri</p>
-                                <p class="publication-venue"><cite>Dexterity with Multifingered Hands, ICRA 2026</cite></p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="publication-year">
-                        <h3>2025</h3>
-                        <ul class="publication-list">
-                            <li class="publication">
-                                <h4><a href="https://doi.org/10.1007/s42235-025-00784-8">A Novel Post-processing Workflow for Improving the Intraoral Measurement for Complete Edentulism</a></h4>
+                                <p class="publication-venue"><cite>arXiv:2611.14274</cite> · 2026</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="publication" id="intraoral-workflow">
+                        <a class="publication-link" href="https://doi.org/10.1007/s42235-025-00784-8" aria-labelledby="intraoral-workflow-title">
+                            <span class="publication-thumb" aria-hidden="true">
+                                <img src="assets/papers/intraoral-workflow.webp" width="312" height="98" loading="lazy" alt="">
+                            </span>
+                            <div class="publication-info">
+                                <p class="publication-type">First author</p>
+                                <h3 id="intraoral-workflow-title">A Novel Post-processing Workflow for Improving the Intraoral Measurement for Complete Edentulism</h3>
                                 <p class="authors"><strong>Chengxiao Dong</strong>, Yu Pan, Xuanyi Dai, Edmond Ho Nang Pow, Chaoyang Song, Fang Wan</p>
-                                <p class="publication-venue"><cite>Journal of Bionic Engineering</cite></p>
-                            </li>
-                            <li class="publication">
-                                <h4><a href="https://doi.org/10.1016/j.aiopen.2025.10.003">ADAP: Adaptive &amp; Dynamic Arc Padding for predicting seam profiles in Multi-Layer-Multi-Pass robotic welding</a></h4>
-                                <p class="authors">He Wang, Sen Li, Xiaobo Liu, <strong>Chengxiao Dong</strong>, Fang Wan</p>
-                                <p class="publication-venue"><cite>AI Open</cite></p>
-                            </li>
-                            <li class="publication">
-                                <h4><a href="https://doi.org/10.20517/ss.2025.14">Teaching oral care via vision-based deformation perception</a></h4>
+                                <p class="publication-venue"><cite>Journal of Bionic Engineering</cite> · 2025</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="publication" id="soft-sensing">
+                        <a class="publication-link" href="https://doi.org/10.20517/ss.2025.14" aria-labelledby="soft-sensing-title">
+                            <span class="publication-thumb" aria-hidden="true">
+                                <img src="assets/soft-sensing.jpg" width="2560" height="1536" loading="lazy" alt="">
+                            </span>
+                            <div class="publication-info">
+                                <p class="publication-type">First author</p>
+                                <h3 id="soft-sensing-title">Teaching oral care via vision-based deformation perception</h3>
                                 <p class="authors"><strong>Chengxiao Dong</strong>, Xuanyi Dai, Yu Pan, Wanghongjie Qiu, Sen Li, Tianyu Wu, Yijie Jin, He Wang, Chaoyang Song, Fang Wan</p>
-                                <p class="publication-venue"><cite>Soft Science</cite></p>
-                            </li>
-                            <li class="publication">
-                                <h4><a href="https://doi.org/10.1109/LRA.2025.3583616">ActiveSPN: Active Soft Polyhedral Networks With Pose Estimation for In-Finger Object Manipulation</a></h4>
+                                <p class="publication-venue"><cite>Soft Science</cite> · 2025</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="publication" id="activespn">
+                        <a class="publication-link" href="https://doi.org/10.1109/LRA.2025.3583616" aria-labelledby="activespn-title">
+                            <span class="publication-thumb" aria-hidden="true">
+                                <span class="publication-cover"><span>ActiveSPN</span><span>IEEE RA-L · 2025</span></span>
+                            </span>
+                            <div class="publication-info">
+                                <p class="publication-type">Second author</p>
+                                <h3 id="activespn-title">ActiveSPN: Active Soft Polyhedral Networks With Pose Estimation for In-Finger Object Manipulation</h3>
                                 <p class="authors">Sen Li, <strong>Chengxiao Dong</strong>, Chaoyang Song, Fang Wan</p>
-                                <p class="publication-venue"><cite>IEEE Robotics and Automation Letters</cite></p>
-                            </li>
-                        </ul>
-                    </div>
-            </section>
-
-            <section class="section" id="projects" aria-labelledby="projects-title">
-                <h2 id="projects-title">Projects</h2>
-                <div class="projects-grid">
-                    <article class="project">
-                        <div class="project-media"><span>Image placeholder</span></div>
-                        <div class="project-content">
-                            <h3>Physical Context for Deformable Linear Object Manipulation</h3>
-                            <p>Comparing ways to represent physical context and testing whether a history of interactions helps a robot choose actions to reshape a cable.</p>
-                            <ul class="project-links">
-                                <li><a href="https://arxiv.org/abs/2611.14274">Preprint</a></li>
-                                <li class="placeholder">Video to be added</li>
-                                <li class="placeholder">GitHub link to be added</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article class="project">
-                        <div class="project-media"><span>Image placeholder</span></div>
-                        <div class="project-content">
-                            <h3>Active Perception for Cable Stiffness Estimation</h3>
-                            <p>Learning probing actions that produce informative deformations, so a robot can estimate bending stiffness in an unconstrained cable.</p>
-                            <ul class="project-links">
-                                <li><a href="https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_3.html#tui2lb_17">Conference program</a></li>
-                                <li class="placeholder">Video to be added</li>
-                                <li class="placeholder">GitHub link to be added</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <article class="project">
-                        <div class="project-media">
-                            <img src="assets/soft-sensing.jpg" width="2560" height="1536" loading="lazy" alt="Graphical abstract of a vision-based soft force sensor used during toothbrushing instruction">
-                        </div>
-                        <div class="project-content">
-                            <h3>Vision-Based Soft Force Sensing</h3>
-                            <p>Using visual measurements of soft-sensor deformation to estimate force and torque and give feedback during toothbrushing instruction.</p>
-                            <p class="media-credit">Image: <a href="https://doi.org/10.20517/ss.2025.14">Dong et al., Soft Science (2025)</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
-                            <ul class="project-links">
-                                <li><a href="https://doi.org/10.20517/ss.2025.14">Paper</a></li>
-                                <li class="placeholder">GitHub link to be added</li>
-                                <li class="placeholder">Video to be added</li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
+                                <p class="publication-venue"><cite>IEEE Robotics and Automation Letters</cite> · 2025</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="publication" id="motion-touch">
+                        <a class="publication-link" href="https://doi.org/10.1145/3772318.3791956" aria-labelledby="motion-touch-title">
+                            <span class="publication-thumb" aria-hidden="true">
+                                <span class="publication-cover"><span>Motion-Touch</span><span>CHI · 2026</span></span>
+                            </span>
+                            <div class="publication-info">
+                                <h3 id="motion-touch-title">Motion-Touch: Kinematic-based Adaptive Switch for Enhancing Virtual-Hand Selection with Target Prediction in AR/VR</h3>
+                                <p class="authors">Yixuan Liu, Ruyang Yu, Haolong Li, Kunling Han, <strong>Chengxiao Dong</strong>, Tao Luo</p>
+                                <p class="publication-venue"><cite>Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems</cite> · 2026</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="publication" id="underwater-superlimbs">
+                        <a class="publication-link" href="https://doi.org/10.1109/TASE.2025.3554036" aria-labelledby="underwater-superlimbs-title">
+                            <span class="publication-thumb" aria-hidden="true">
+                                <img src="assets/papers/underwater-superlimbs.webp" width="550" height="309" loading="lazy" alt="">
+                            </span>
+                            <div class="publication-info">
+                                <h3 id="underwater-superlimbs-title">Multimodal Intention Recognition Combining Head Motion and Throat Vibration for Underwater Superlimbs</h3>
+                                <p class="authors">Rongzheng Zhang, Wanghongjie Qiu, Jianuo Qiu, Yuqin Guo, <strong>Chengxiao Dong</strong>, Tuo Zhang, Juan Yi, Chaoyang Song, H. Harry Asada, Fang Wan</p>
+                                <p class="publication-venue"><cite>IEEE Transactions on Automation Science and Engineering</cite> · 2026 <span>· First published online in 2025</span></p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="publication" id="welding-adap">
+                        <a class="publication-link" href="https://doi.org/10.1016/j.aiopen.2025.10.003" aria-labelledby="welding-adap-title">
+                            <span class="publication-thumb" aria-hidden="true">
+                                <img src="assets/papers/welding-adap.webp" width="485" height="553" loading="lazy" alt="">
+                            </span>
+                            <div class="publication-info">
+                                <h3 id="welding-adap-title">ADAP: Adaptive &amp; Dynamic Arc Padding for predicting seam profiles in Multi-Layer-Multi-Pass robotic welding</h3>
+                                <p class="authors">He Wang, Sen Li, Xiaobo Liu, <strong>Chengxiao Dong</strong>, Fang Wan</p>
+                                <p class="publication-venue"><cite>AI Open</cite> · 2025</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <details class="publication-credits">
+                    <summary>Figure credits</summary>
+                    <p>Article figures appear in the linked papers. <a href="https://jianuoqiu.github.io/">Jianuo Qiu</a> shared the underwater superlimbs preview. The Soft Science graphical abstract is by Dong et al. and licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+                </details>
             </section>
         </div>
 
